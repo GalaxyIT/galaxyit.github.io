@@ -6,5 +6,5 @@ function reverseString(str) {
 }
 
 original = document.querySelector('title').textContent
-newStr = reverseString(reverseString(original).replace(reverseString('Jenkins'), 'Galaxy IT'))
+newStr = reverseString(reverseString(original).replace(reverseString('Jenkins'), reverseString('Galaxy IT')))
 document.querySelector('title').textContent = newStr
