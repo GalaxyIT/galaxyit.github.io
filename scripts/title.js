@@ -1,10 +1,10 @@
-function replaceLast(x, y, z){
-  var a = x.split("");
-  a[x.lastIndexOf(y)] = z;
-  return a.join("");
+function reverseString(str) {
+    var splitString = str.split("")
+    var reverseArray = splitString.reverse()
+    var joinArray = reverseArray.join("")
+    return joinArray
 }
 
 original = document.querySelector('title').textContent
-// newStr = original.replace('Jenkins', 'Galaxy IT')
-newStr = replaceLast(original, 'Jenkins', 'Galaxy IT')
+newStr = reverseString(reverseString(original).replace(reverseString('Jenkins'), 'Galaxy IT'))
 document.querySelector('title').textContent = newStr
